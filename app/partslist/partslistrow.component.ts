@@ -1,16 +1,14 @@
-import { Component } from '@angular/core';
-
-import { PartsListService } from './partslist.service';
-
-
+import { Component, Input } from '@angular/core';
 
 @Component({
   moduleId: module.id,
-  selector: 'epl-partslistrow',
+  // attribute selector [...]
+  selector: '[epl-partslistrow]',
   templateUrl: 'partslistrow.template.html'
 })
-export class PartsListRowComponent { 
-
+export class PartsListRowComponent {
+  // property of the component 
+  @Input('epl-partslistrow') part;
 
 
 }

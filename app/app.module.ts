@@ -5,6 +5,7 @@ import { AppComponent } from './app.component'
 import { PartsListComponent } from './partslist/partslist.component' 
 import { PartsListRowComponent } from './partslist/partslistrow.component' 
 import { PartsListService } from './partslist/partslist.service' 
+import { PartsSearchComponent} from './partssearch/partssearch.component' 
 
 @NgModule({
   imports:      [ BrowserModule ],
@@ -12,7 +13,8 @@ import { PartsListService } from './partslist/partslist.service'
   declarations: [ 
     AppComponent,
     PartsListComponent,
-    PartsListRowComponent
+    PartsListRowComponent,
+    PartsSearchComponent
   ],
 
   providers: [

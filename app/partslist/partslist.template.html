@@ -1,9 +1,15 @@
 
 
 <table class="table">
-	<div *ngFor="let part of getParts()">
-		{{part.partnr}}
-		{{part.typenr}}
-	</div>
-
+	<thead>	
+		<tr>
+			<th>Partnr</th>
+			<th>Typenr</th>
+			<th>ID</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr *ngFor="let part of getParts()" [epl-partslistrow]="part">
+		</tr>
+	</tbody>
 </table>
